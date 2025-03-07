@@ -1,10 +1,12 @@
 # Software-Security-and-Penetration-Testing
-Software Security and Penetration Testing projects
+Software Security and Penetration Testing projects. 
 
-# Collaborators
+## Projects in Polish:
+Projects #1-5 were conducted during Polish studies at Warsaw University of Technology, hence the reports are written exclusively in Polish. Collaborators for these projects include:
+* Miłosz Kutyła, BEng, Warsaw University of Technology, ([GitHub](https://github.com/mkutyla))
+* Jakub Ossowski, BEng, Warsaw University of Technology, ([GitHub](https://github.com/bilevcik))
+* Patryk Jankowicz, BEng, Warsaw University of Technology ([GitHub](https://github.com/PatrykSJ))
+* Jan Walczak, BEng, Warsaw University of Technology ([GitHub](https://github.com/JanWalczak))
 
-Collaborators for this repository include:
-* Miłosz Kutyła ([GitHub](https://github.com/mkutyla)), Warsaw University of Technology
-* Jakub Ossowski ([GitHub](https://github.com/bilevcik)), Warsaw University of Technology
-* Patryk Jankowicz ([GitHub](https://github.com/PatrykSJ)), Warsaw University of Technology
-* Jan Walczak ([GitHub](https://github.com/JanWalczak)), Warsaw University of Technology
+## Projects in English
+Project #6 is written in English as a simple vulnerability overview.
