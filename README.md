@@ -7,6 +7,8 @@ Projects starting with a number were conducted during Polish studies at Warsaw U
 * Jakub Ossowski, BEng, Warsaw University of Technology, ([GitHub](https://github.com/bilevcik))
 * Patryk Jankowicz, BEng, Warsaw University of Technology ([GitHub](https://github.com/PatrykSJ))
 * Jan Walczak, BEng, Warsaw University of Technology ([GitHub](https://github.com/JanWalczak))
+* Jan Wojciechowski, BEng, Warsaw University of Technology
+* Kacper Szaruch, Warsaw University of Technology
 
 ## Projects in English
 Project X is written in English as a simple vulnerability overview.
