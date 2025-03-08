@@ -11,4 +11,4 @@ Projects starting with a number were conducted during Polish studies at Warsaw U
 * Kacper Szaruch, Warsaw University of Technology
 
 ## Projects in English
-Project X is written in English as a simple vulnerability overview.
+Projects X are written in English as simple vulnerability and APT overviews.
