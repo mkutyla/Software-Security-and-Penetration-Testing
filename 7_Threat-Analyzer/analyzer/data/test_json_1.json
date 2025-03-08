@@ -1,0 +1,4107 @@
+{
+  "device": {
+    "name": "Lieberman",
+    "hostname": "Lieberman",
+    "mode": "layer3",
+    "version": "5.2.5,build701",
+    "serial": "FG100D3G13808144",
+    "domain": "PT_domain",
+    "major_version": "5.0",
+    "protected_cloud_host_ips": [],
+    "is_layer2": 0
+  },
+  "policies": {
+    "1073741825": {
+      "service": [
+        "gALL"
+      ],
+      "action": "deny",
+      "enable": "enabled",
+      "log": 0,
+      "comments": "TreeSource",
+      "rule_id": "1073741825",
+      "rule_name": "1073741825",
+      "rule_display_name": "1073741825",
+      "line_number": 1,
+      "rule_num": 1,
+      "rule_grp": "before",
+      "src": [
+        "gnone"
+      ],
+      "dst": [
+        "gappstore"
+      ],
+      "src_negate": 0,
+      "dst_negate": 0,
+      "object_nat_source": false,
+      "object_nat_destination": false,
+      "src_zone": [
+        "any"
+      ],
+      "dst_zone": [
+        "any"
+      ],
+      "src_nat": [],
+      "dst_nat": [],
+      "nat": "enabled",
+      "global_nat": "enabled",
+      "map_source_to_interface": false,
+      "bi-directional": 0,
+      "security-profiles": {},
+      "target": [],
+      "additional_properties": {}
+    },
+    "1074741826": {
+      "service": [
+        "gALL"
+      ],
+      "action": "accept",
+      "enable": "disabled",
+      "log": 0,
+      "comments": "",
+      "rule_id": "1074741826",
+      "rule_name": "1074741826",
+      "rule_display_name": "1074741826",
+      "line_number": 5,
+      "rule_num": 5,
+      "rule_grp": "after",
+      "src": [
+        "gnone"
+      ],
+      "dst": [
+        "gadobe"
+      ],
+      "src_negate": 0,
+      "dst_negate": 0,
+      "object_nat_source": false,
+      "object_nat_destination": false,
+      "src_zone": [
+        "any"
+      ],
+      "dst_zone": [
+        "any"
+      ],
+      "src_nat": [],
+      "dst_nat": [],
+      "nat": "enabled",
+      "global_nat": "enabled",
+      "map_source_to_interface": false,
+      "bi-directional": 0,
+      "security-profiles": {},
+      "target": [],
+      "additional_properties": {}
+    },
+    "1073741827": {
+      "service": [
+        "service_5"
+      ],
+      "action": "deny",
+      "enable": "enabled",
+      "log": 0,
+      "comments": "",
+      "rule_id": "1073741827",
+      "rule_name": "1073741827",
+      "rule_display_name": "1073741827",
+      "line_number": 2,
+      "rule_num": 2,
+      "rule_grp": "before",
+      "src": [
+        "AddressGlobal1"
+      ],
+      "dst": [
+        "address_5"
+      ],
+      "src_negate": 0,
+      "dst_negate": 0,
+      "object_nat_source": false,
+      "object_nat_destination": false,
+      "src_zone": [
+        "any"
+      ],
+      "dst_zone": [
+        "any"
+      ],
+      "src_nat": [],
+      "dst_nat": [],
+      "nat": "enabled",
+      "global_nat": "enabled",
+      "map_source_to_interface": false,
+      "bi-directional": 0,
+      "security-profiles": {},
+      "target": [],
+      "additional_properties": {}
+    },
+    "1073741828": {
+      "service": [
+        "service_5"
+      ],
+      "action": "deny",
+      "enable": "disabled",
+      "log": 0,
+      "comments": "",
+      "rule_id": "1073741828",
+      "rule_name": "1073741828",
+      "rule_display_name": "1073741828",
+      "line_number": 3,
+      "rule_num": 3,
+      "rule_grp": "before",
+      "src": [
+        "address_5"
+      ],
+      "dst": [
+        "address_5"
+      ],
+      "src_negate": 0,
+      "dst_negate": 0,
+      "object_nat_source": false,
+      "object_nat_destination": false,
+      "src_zone": [
+        "any"
+      ],
+      "dst_zone": [
+        "any"
+      ],
+      "src_nat": [],
+      "dst_nat": [],
+      "nat": "enabled",
+      "global_nat": "enabled",
+      "map_source_to_interface": false,
+      "bi-directional": 0,
+      "security-profiles": {},
+      "target": [],
+      "additional_properties": {}
+    },
+    "1074741825": {
+      "service": [
+        "gGOPHER"
+      ],
+      "action": "deny",
+      "enable": "enabled",
+      "log": 0,
+      "comments": "",
+      "rule_id": "1074741825",
+      "rule_name": "1074741825",
+      "rule_display_name": "1074741825",
+      "line_number": 4,
+      "rule_num": 4,
+      "rule_grp": "after",
+      "src": [
+        "33_Global"
+      ],
+      "dst": [
+        "address_5"
+      ],
+      "src_negate": 0,
+      "dst_negate": 0,
+      "object_nat_source": false,
+      "object_nat_destination": false,
+      "src_zone": [
+        "any"
+      ],
+      "dst_zone": [
+        "any"
+      ],
+      "src_nat": [],
+      "dst_nat": [],
+      "nat": "enabled",
+      "global_nat": "enabled",
+      "map_source_to_interface": false,
+      "bi-directional": 0,
+      "security-profiles": {},
+      "target": [],
+      "additional_properties": {}
+    }
+  },
+  "hosts": {
+    "ip-10.150.191.25": {
+      "name": "ip-10.150.191.25",
+      "comment": "",
+      "ips": [
+        "10.150.191.25/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "google-play": {
+      "name": "google-play",
+      "comment": "",
+      "ips": [
+        "191.156.100.20"
+      ],
+      "negate": false,
+      "type": "DOMAIN",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "10.30.193.1": {
+      "name": "10.30.193.1",
+      "comment": "",
+      "ips": [
+        "10.30.193.1/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.192.28": {
+      "name": "ip-10.30.192.28",
+      "comment": "",
+      "ips": [
+        "10.30.192.28/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.120.191.44": {
+      "name": "ip-10.120.191.44",
+      "comment": "",
+      "ips": [
+        "10.120.191.44/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "none": {
+      "name": "none",
+      "comment": "",
+      "ips": [
+        "0.0.0.0/0"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "Addr": {
+      "name": "Addr",
+      "comment": "",
+      "ips": [
+        "1.2.3.4/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "Address_2": {
+      "name": "Address_2",
+      "comment": "",
+      "ips": [
+        "1.1.1.1-20.20.255.1"
+      ],
+      "negate": false,
+      "type": "IP_RANGE",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "Address_1": {
+      "name": "Address_1",
+      "comment": "",
+      "ips": [
+        "192.168.0.0/16"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "Address_3": {
+      "name": "Address_3",
+      "comment": "",
+      "ips": [
+        "100.0.0.1-200.0.0.2"
+      ],
+      "negate": false,
+      "type": "IP_RANGE",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.125.75": {
+      "name": "ip-10.10.125.75",
+      "comment": "",
+      "ips": [
+        "10.10.125.75/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.57": {
+      "name": "ip-10.30.191.57",
+      "comment": "",
+      "ips": [
+        "10.30.191.57/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.192.25": {
+      "name": "ip-10.30.192.25",
+      "comment": "",
+      "ips": [
+        "10.30.192.25/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "10.110.193.1": {
+      "name": "10.110.193.1",
+      "comment": "",
+      "ips": [
+        "10.110.193.1/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.193.25": {
+      "name": "ip-10.10.193.25",
+      "comment": "",
+      "ips": [
+        "10.10.193.25/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-191.156.200.2": {
+      "name": "ip-191.156.200.2",
+      "comment": "",
+      "ips": [
+        "191.156.200.2/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.192.55": {
+      "name": "ip-10.10.192.55",
+      "comment": "",
+      "ips": [
+        "10.10.192.55/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.191.85": {
+      "name": "ip-10.10.191.85",
+      "comment": "",
+      "ips": [
+        "10.10.191.85/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.20.192.75": {
+      "name": "ip-10.20.192.75",
+      "comment": "",
+      "ips": [
+        "10.20.192.75/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.46": {
+      "name": "ip-10.30.191.46",
+      "comment": "",
+      "ips": [
+        "10.30.191.46/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.192.87": {
+      "name": "ip-10.10.192.87",
+      "comment": "",
+      "ips": [
+        "10.10.192.87/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.120.191.175": {
+      "name": "ip-10.120.191.175",
+      "comment": "",
+      "ips": [
+        "10.120.191.175/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "update.microsoft.com": {
+      "name": "update.microsoft.com",
+      "comment": "",
+      "ips": [
+        "134.170.58.221"
+      ],
+      "negate": false,
+      "type": "DOMAIN",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.85": {
+      "name": "ip-10.110.191.85",
+      "comment": "",
+      "ips": [
+        "10.110.191.85/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.40.192.28": {
+      "name": "ip-10.40.192.28",
+      "comment": "",
+      "ips": [
+        "10.40.192.28/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.193.27": {
+      "name": "ip-10.110.193.27",
+      "comment": "",
+      "ips": [
+        "10.110.193.27/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.158": {
+      "name": "ip-10.110.191.158",
+      "comment": "",
+      "ips": [
+        "10.110.191.158/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.192.47": {
+      "name": "ip-10.30.192.47",
+      "comment": "",
+      "ips": [
+        "10.30.192.47/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.141.191.25": {
+      "name": "ip-10.141.191.25",
+      "comment": "",
+      "ips": [
+        "10.141.191.25/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "gauth.gfx.ms": {
+      "name": "gauth.gfx.ms",
+      "comment": "",
+      "ips": [
+        "23.37.40.70"
+      ],
+      "negate": false,
+      "type": "DOMAIN",
+      "is_negate": false,
+      "object_container": "shared"
+    },
+    "33": {
+      "name": "33",
+      "comment": "",
+      "ips": [
+        "33.33.33.0/24"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "shared"
+    },
+    "ip-10.110.191.71": {
+      "name": "ip-10.110.191.71",
+      "comment": "",
+      "ips": [
+        "10.110.191.71/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.75": {
+      "name": "ip-10.110.191.75",
+      "comment": "",
+      "ips": [
+        "10.110.191.75/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.20.192.57": {
+      "name": "ip-10.20.192.57",
+      "comment": "",
+      "ips": [
+        "10.20.192.57/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "a_10.132.22.10": {
+      "name": "a_10.132.22.10",
+      "comment": "",
+      "ips": [
+        "10.132.22.10/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "44": {
+      "name": "44",
+      "comment": "",
+      "ips": [
+        "44.44.44.0/24"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "shared"
+    },
+    "ip-10.10.191.55": {
+      "name": "ip-10.10.191.55",
+      "comment": "",
+      "ips": [
+        "10.10.191.55/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.14": {
+      "name": "ip-10.30.191.14",
+      "comment": "",
+      "ips": [
+        "10.30.191.14/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.15": {
+      "name": "ip-10.30.191.15",
+      "comment": "",
+      "ips": [
+        "10.30.191.15/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.192.25": {
+      "name": "ip-10.10.192.25",
+      "comment": "",
+      "ips": [
+        "10.10.192.25/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.192.55-1": {
+      "name": "ip-10.10.192.55-1",
+      "comment": "",
+      "ips": [
+        "10.10.192.55/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.120.191.88": {
+      "name": "ip-10.120.191.88",
+      "comment": "",
+      "ips": [
+        "10.120.191.88/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.140.191.48": {
+      "name": "ip-10.140.191.48",
+      "comment": "",
+      "ips": [
+        "10.140.191.48/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.175": {
+      "name": "ip-10.110.191.175",
+      "comment": "",
+      "ips": [
+        "10.110.191.175/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "all": {
+      "name": "all",
+      "comment": "",
+      "ips": [
+        "0.0.0.0/0"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.193.28": {
+      "name": "ip-10.30.193.28",
+      "comment": "",
+      "ips": [
+        "10.30.193.28/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.191.47": {
+      "name": "ip-10.10.191.47",
+      "comment": "",
+      "ips": [
+        "10.10.191.47/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.191.45": {
+      "name": "ip-10.10.191.45",
+      "comment": "",
+      "ips": [
+        "10.10.191.45/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "@345": {
+      "name": "@345",
+      "comment": "",
+      "ips": [
+        "1.1.1.1/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "h_10.10.192.44": {
+      "name": "h_10.10.192.44",
+      "comment": "",
+      "ips": [
+        "10.10.192.44/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.56": {
+      "name": "ip-10.110.191.56",
+      "comment": "",
+      "ips": [
+        "10.110.191.56/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.120.191.72": {
+      "name": "ip-10.120.191.72",
+      "comment": "",
+      "ips": [
+        "10.120.191.72/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.58": {
+      "name": "ip-10.110.191.58",
+      "comment": "",
+      "ips": [
+        "10.110.191.58/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.178": {
+      "name": "ip-10.30.191.178",
+      "comment": "",
+      "ips": [
+        "10.30.191.178/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "33_Global": {
+      "name": "33_Global",
+      "comment": "",
+      "ips": [
+        "33.33.33.0/24"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "shared"
+    },
+    "ip-10.30.191.88": {
+      "name": "ip-10.30.191.88",
+      "comment": "",
+      "ips": [
+        "10.30.191.88/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.193.25": {
+      "name": "ip-10.30.193.25",
+      "comment": "",
+      "ips": [
+        "10.30.193.25/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.85": {
+      "name": "ip-10.30.191.85",
+      "comment": "",
+      "ips": [
+        "10.30.191.85/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "gnone": {
+      "name": "gnone",
+      "comment": "",
+      "ips": [
+        "0.0.0.0/0"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "shared"
+    },
+    "ip-10.110.191.5": {
+      "name": "ip-10.110.191.5",
+      "comment": "",
+      "ips": [
+        "10.110.191.5/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "AddressGlobal1": {
+      "name": "AddressGlobal1",
+      "comment": "",
+      "ips": [
+        "10.10.192.75/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "shared"
+    },
+    "h_10.30.192.50": {
+      "name": "h_10.30.192.50",
+      "comment": "",
+      "ips": [
+        "10.30.192.50/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "address_4": {
+      "name": "address_4",
+      "comment": "",
+      "ips": [
+        "192.168.3.96/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "shared"
+    },
+    "net-10.120.191.56-30": {
+      "name": "net-10.120.191.56-30",
+      "comment": "",
+      "ips": [
+        "10.120.191.56/30"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.44": {
+      "name": "ip-10.110.191.44",
+      "comment": "",
+      "ips": [
+        "10.110.191.44/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.10.191.72": {
+      "name": "ip-10.10.191.72",
+      "comment": "",
+      "ips": [
+        "10.10.191.72/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.46": {
+      "name": "ip-10.110.191.46",
+      "comment": "",
+      "ips": [
+        "10.110.191.46/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.120.192.75": {
+      "name": "ip-10.120.192.75",
+      "comment": "",
+      "ips": [
+        "10.120.192.75/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.110.191.48": {
+      "name": "ip-10.110.191.48",
+      "comment": "",
+      "ips": [
+        "10.110.191.48/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "a_172.20.120.100": {
+      "name": "a_172.20.120.100",
+      "comment": "",
+      "ips": [
+        "172.20.120.100/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.120.191.28": {
+      "name": "ip-10.120.191.28",
+      "comment": "",
+      "ips": [
+        "10.120.191.28/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.120.191.27": {
+      "name": "ip-10.120.191.27",
+      "comment": "",
+      "ips": [
+        "10.120.191.27/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.25": {
+      "name": "ip-10.30.191.25",
+      "comment": "",
+      "ips": [
+        "10.30.191.25/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.26": {
+      "name": "ip-10.30.191.26",
+      "comment": "",
+      "ips": [
+        "10.30.191.26/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.28": {
+      "name": "ip-10.30.191.28",
+      "comment": "",
+      "ips": [
+        "10.30.191.28/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "h_10.10.191.56": {
+      "name": "h_10.10.191.56",
+      "comment": "",
+      "ips": [
+        "10.10.191.56/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "address_5": {
+      "name": "address_5",
+      "comment": "address_5",
+      "ips": [
+        "0.0.0.0/0"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "shared"
+    },
+    "ip-10.120.191.13": {
+      "name": "ip-10.120.191.13",
+      "comment": "",
+      "ips": [
+        "10.120.191.13/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "ip-10.30.191.158": {
+      "name": "ip-10.30.191.158",
+      "comment": "",
+      "ips": [
+        "10.30.191.158/32"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    },
+    "Address-SUBNET": {
+      "name": "Address-SUBNET",
+      "comment": "Simple comment",
+      "ips": [
+        "192.168.0.0/16"
+      ],
+      "negate": false,
+      "type": "SUBNET",
+      "is_negate": false,
+      "object_container": "device_group"
+    }
+  },
+  "services": {
+    "gFTP_GET": {
+      "name": "gFTP_GET",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "21"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "POP3": {
+      "name": "POP3",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "110"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "SMTPS": {
+      "name": "SMTPS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "465"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gOSPF": {
+      "name": "gOSPF",
+      "service_definitions": [
+        {
+          "protocol": "89",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gSSH": {
+      "name": "gSSH",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "22"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "VDOLIVE": {
+      "name": "VDOLIVE",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "7000-7010"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "NNTP": {
+      "name": "NNTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "119"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gDCE-RPC": {
+      "name": "gDCE-RPC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "135"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "135"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gPOP3S": {
+      "name": "gPOP3S",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "995"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "RSH": {
+      "name": "RSH",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "512-1023",
+          "dst_port": "514"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "AH": {
+      "name": "AH",
+      "service_definitions": [
+        {
+          "protocol": "51",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gUUCP": {
+      "name": "gUUCP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "540"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "QUAKE": {
+      "name": "QUAKE",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "26000"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "27000"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "27910"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "27960"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "GOPHER": {
+      "name": "GOPHER",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "70"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "service_1": {
+      "name": "service_1",
+      "service_definitions": [
+        {
+          "protocol": "120",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "service_2": {
+      "name": "service_2",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "2-400",
+          "dst_port": "1-500"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gINFO_REQUEST": {
+      "name": "gINFO_REQUEST",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "15",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gAOL": {
+      "name": "gAOL",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5190-5194"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "RTSP": {
+      "name": "RTSP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "554"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "7070"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "8554"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "554"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "IRC": {
+      "name": "IRC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "6660-6669"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "PC-Anywhere": {
+      "name": "PC-Anywhere",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5631"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "5632"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "INFO_ADDRESS": {
+      "name": "INFO_ADDRESS",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "17",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "WINS": {
+      "name": "WINS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1512"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1512"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "DCE-RPC": {
+      "name": "DCE-RPC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "135"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "135"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "L2TP": {
+      "name": "L2TP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1701"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1701"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gTALK": {
+      "name": "gTALK",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "517-518"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gSAMBA": {
+      "name": "gSAMBA",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "139"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "tcp-441": {
+      "name": "tcp-441",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "441-441"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "IMAPS": {
+      "name": "IMAPS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "993"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "TFTP": {
+      "name": "TFTP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "69"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "H323": {
+      "name": "H323",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1720"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1503"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1719"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "udp-16992": {
+      "name": "udp-16992",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "16992"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gRSH": {
+      "name": "gRSH",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "512-1023",
+          "dst_port": "514"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gMYSQL": {
+      "name": "gMYSQL",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "3306"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gFTP_PUT": {
+      "name": "gFTP_PUT",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "21"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "PPTP": {
+      "name": "PPTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1723"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "RADIUS-OLD": {
+      "name": "RADIUS-OLD",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1645"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1646"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gIRC": {
+      "name": "gIRC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "6660-6669"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "RDP": {
+      "name": "RDP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "3389"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "FTP_GET": {
+      "name": "FTP_GET",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "21"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "udp-16992-16995": {
+      "name": "udp-16992-16995",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "16992-16995"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "SMTP": {
+      "name": "SMTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "25"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "IMAP": {
+      "name": "IMAP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "143"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "LDAP_UDP": {
+      "name": "LDAP_UDP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "389"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "RLOGIN": {
+      "name": "RLOGIN",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "512-1023",
+          "dst_port": "513"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gSCCP": {
+      "name": "gSCCP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "2000"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gMS-SQL": {
+      "name": "gMS-SQL",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1433"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1434"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "tcp-16995": {
+      "name": "tcp-16995",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "16995"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gTIMESTAMP": {
+      "name": "gTIMESTAMP",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "13",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "ALL_TCP": {
+      "name": "ALL_TCP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1-65535"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-16996": {
+      "name": "tcp-16996",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "16996"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-16993": {
+      "name": "tcp-16993",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "16993"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-16994": {
+      "name": "tcp-16994",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "16994"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-16992": {
+      "name": "tcp-16992",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "16992"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gL2TP": {
+      "name": "gL2TP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1701"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1701"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gTFTP": {
+      "name": "gTFTP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "69"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "VNC": {
+      "name": "VNC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5900"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "TALK": {
+      "name": "TALK",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "517-518"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "SAMBA": {
+      "name": "SAMBA",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "139"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "SCCP": {
+      "name": "SCCP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "2000"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gH323": {
+      "name": "gH323",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1720"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1503"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1719"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gHTTP": {
+      "name": "gHTTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "80"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gSIP-MSNmessenger": {
+      "name": "gSIP-MSNmessenger",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1863"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gwebproxy": {
+      "name": "gwebproxy",
+      "service_definitions": [],
+      "object_container": "shared"
+    },
+    "gRDP": {
+      "name": "gRDP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "3389"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "BGP": {
+      "name": "BGP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "179"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "HTTP": {
+      "name": "HTTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "80"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "81"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "FTP_PUT": {
+      "name": "FTP_PUT",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "21"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-759": {
+      "name": "tcp-759",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "759"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gFINGER": {
+      "name": "gFINGER",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "79"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "tcp-757": {
+      "name": "tcp-757",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "757"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gPING6": {
+      "name": "gPING6",
+      "service_definitions": [],
+      "object_container": "shared"
+    },
+    "MMS": {
+      "name": "MMS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1755"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1024-5000"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gPPTP": {
+      "name": "gPPTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1723"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gALL_ICMP6": {
+      "name": "gALL_ICMP6",
+      "service_definitions": [],
+      "object_container": "shared"
+    },
+    "X-WINDOWS": {
+      "name": "X-WINDOWS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "6000-6063"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gALL_ICMP": {
+      "name": "gALL_ICMP",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "0",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "GRE": {
+      "name": "GRE",
+      "service_definitions": [
+        {
+          "protocol": "47",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "SIP": {
+      "name": "SIP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5060"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "5060"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gMMS": {
+      "name": "gMMS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1755"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1024-5000"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gSIP": {
+      "name": "gSIP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5060"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "5060"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gBGP": {
+      "name": "gBGP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "179"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "tcp-527": {
+      "name": "tcp-527",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "527"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gAH": {
+      "name": "gAH",
+      "service_definitions": [
+        {
+          "protocol": "51",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gSMTPS": {
+      "name": "gSMTPS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "465"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gQUAKE": {
+      "name": "gQUAKE",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "26000"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "27000"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "27910"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "27960"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gRTSP": {
+      "name": "gRTSP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "554"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "7070"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "8554"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "554"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "HTTPS": {
+      "name": "HTTPS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "443"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gInternet-Locator-Service": {
+      "name": "gInternet-Locator-Service",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "389"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gPOP3": {
+      "name": "gPOP3",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "110"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gGRE": {
+      "name": "gGRE",
+      "service_definitions": [
+        {
+          "protocol": "47",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "MYSQL": {
+      "name": "MYSQL",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "3306"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "TELNET": {
+      "name": "TELNET",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "23"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-775": {
+      "name": "tcp-775",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "775"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "CVSPSERVER": {
+      "name": "CVSPSERVER",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "2401"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2401"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "INFO_REQUEST": {
+      "name": "INFO_REQUEST",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "15",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-1433": {
+      "name": "tcp-1433",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1433"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gSMTP": {
+      "name": "gSMTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "25"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gVDOLIVE": {
+      "name": "gVDOLIVE",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "7000-7010"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gNNTP": {
+      "name": "gNNTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "119"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gVNC": {
+      "name": "gVNC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5900"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "FINGER": {
+      "name": "FINGER",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "79"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gIMAP": {
+      "name": "gIMAP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "143"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "RIP": {
+      "name": "RIP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "520"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gGOPHER": {
+      "name": "gGOPHER",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "70"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gKERBEROS": {
+      "name": "gKERBEROS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "88"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "88"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "POP3S": {
+      "name": "POP3S",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "995"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "TRACEROUTE": {
+      "name": "TRACEROUTE",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "33434-33535"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "OSPF": {
+      "name": "OSPF",
+      "service_definitions": [
+        {
+          "protocol": "89",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "GTP": {
+      "name": "GTP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2123"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2152"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "3386"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gRIP": {
+      "name": "gRIP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "520"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "DNS": {
+      "name": "DNS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "53"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "53"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "MS-SQL": {
+      "name": "MS-SQL",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1433"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1434"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "RAUDIO": {
+      "name": "RAUDIO",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "7070"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gDHCP": {
+      "name": "gDHCP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "67-68"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gGTP": {
+      "name": "gGTP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2123"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2152"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "3386"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gTRACEROUTE": {
+      "name": "gTRACEROUTE",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "33434-33535"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "SNMP": {
+      "name": "SNMP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "161-162"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "161-162"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "NONE": {
+      "name": "NONE",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "0"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "testService": {
+      "name": "testService",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5500-5555"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gINFO_ADDRESS": {
+      "name": "gINFO_ADDRESS",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "17",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gTELNET": {
+      "name": "gTELNET",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "23"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gHTTPS": {
+      "name": "gHTTPS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "443"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "SMB": {
+      "name": "SMB",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "445"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "UUCP": {
+      "name": "UUCP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "540"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gWINS": {
+      "name": "gWINS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1512"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1512"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gSYSLOG": {
+      "name": "gSYSLOG",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "514"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "RADIUS": {
+      "name": "RADIUS",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1812"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1813"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "NetMeeting": {
+      "name": "NetMeeting",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1720"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gCVSPSERVER": {
+      "name": "gCVSPSERVER",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "2401"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2401"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "tcp-24601": {
+      "name": "tcp-24601",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "24601"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "AFS3": {
+      "name": "AFS3",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "7000-7009"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "7000-7009"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gLDAP": {
+      "name": "gLDAP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "389"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "FTP": {
+      "name": "FTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "21"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "REXEC": {
+      "name": "REXEC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "512"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "NTP": {
+      "name": "NTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "123"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "123"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "ONC-RPC": {
+      "name": "ONC-RPC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "111"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "111"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "SIP-MSNmessenger": {
+      "name": "SIP-MSNmessenger",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1863"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gSMB": {
+      "name": "gSMB",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "445"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "my_service": {
+      "name": "my_service",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "0"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gFTP": {
+      "name": "gFTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "21"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "WINFRAME": {
+      "name": "WINFRAME",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1494"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "2598"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "PING": {
+      "name": "PING",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "8",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "WAIS": {
+      "name": "WAIS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "210"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-175": {
+      "name": "tcp-175",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "175"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "IKE": {
+      "name": "IKE",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "500"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "4500"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "ALL_UDP": {
+      "name": "ALL_UDP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1-65535"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "ESP": {
+      "name": "ESP",
+      "service_definitions": [
+        {
+          "protocol": "50",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gDNS": {
+      "name": "gDNS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "53"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "53"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gNetMeeting": {
+      "name": "gNetMeeting",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1720"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gSOCKS": {
+      "name": "gSOCKS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1080"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1080"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gSQUID": {
+      "name": "gSQUID",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "3128"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gLDAP_UDP": {
+      "name": "gLDAP_UDP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "389"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "ALL": {
+      "name": "ALL",
+      "service_definitions": [
+        {
+          "protocol": "6",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "webproxy": {
+      "name": "webproxy",
+      "service_definitions": [],
+      "object_container": "device_group"
+    },
+    "gRAUDIO": {
+      "name": "gRAUDIO",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "7070"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "LDAP": {
+      "name": "LDAP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "389"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gALL_UDP": {
+      "name": "gALL_UDP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1-65535"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gX-WINDOWS": {
+      "name": "gX-WINDOWS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "6000-6063"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "ALL_ICMP6": {
+      "name": "ALL_ICMP6",
+      "service_definitions": [],
+      "object_container": "device_group"
+    },
+    "gWAIS": {
+      "name": "gWAIS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "210"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gPING": {
+      "name": "gPING",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "8",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "TCP-Serv": {
+      "name": "TCP-Serv",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "2-400",
+          "dst_port": "1-500"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-225": {
+      "name": "tcp-225",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "225"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "PING6": {
+      "name": "PING6",
+      "service_definitions": [],
+      "object_container": "device_group"
+    },
+    "tcp-55": {
+      "name": "tcp-55",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "55-55"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gALL": {
+      "name": "gALL",
+      "service_definitions": [
+        {
+          "protocol": "0",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "TIMESTAMP": {
+      "name": "TIMESTAMP",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "13",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "NFS": {
+      "name": "NFS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "111"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "2049"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "111"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2049"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "Internet-Locator-Service": {
+      "name": "Internet-Locator-Service",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "389"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gMGCP": {
+      "name": "gMGCP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2427"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2727"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "MGCP": {
+      "name": "MGCP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2427"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2727"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gService": {
+      "name": "gService",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "999",
+          "dst_port": "0"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "SQUID": {
+      "name": "SQUID",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "3128"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gALL_TCP": {
+      "name": "gALL_TCP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1-65535"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "tcp-232": {
+      "name": "tcp-232",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "232-232"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "ALL_ICMP": {
+      "name": "ALL_ICMP",
+      "service_definitions": [
+        {
+          "protocol": "icmp",
+          "src_port": "0",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gWINFRAME": {
+      "name": "gWINFRAME",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1494"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "2598"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "tcp-*": {
+      "name": "tcp-*",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "0-65535"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "service_5": {
+      "name": "service_5",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "75"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gIMAPS": {
+      "name": "gIMAPS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "993"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gIKE": {
+      "name": "gIKE",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "500"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "4500"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gNTP": {
+      "name": "gNTP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "123"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "123"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gESP": {
+      "name": "gESP",
+      "service_definitions": [
+        {
+          "protocol": "50",
+          "src_port": "*",
+          "dst_port": "*"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "SOCKS": {
+      "name": "SOCKS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1080"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1080"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "DHCP6": {
+      "name": "DHCP6",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "546"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "547"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gREXEC": {
+      "name": "gREXEC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "512"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gRLOGIN": {
+      "name": "gRLOGIN",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "512-1023",
+          "dst_port": "513"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gNONE": {
+      "name": "gNONE",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "0"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "tcp-1701": {
+      "name": "tcp-1701",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "1701"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "AOL": {
+      "name": "AOL",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5190-5194"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "tcp-72": {
+      "name": "tcp-72",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "72-72"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gRADIUS-OLD": {
+      "name": "gRADIUS-OLD",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1645"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1646"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "SSH": {
+      "name": "SSH",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "22"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "KERBEROS": {
+      "name": "KERBEROS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "88"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "88"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gPC-Anywhere": {
+      "name": "gPC-Anywhere",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "5631"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "5632"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "DHCP": {
+      "name": "DHCP",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "67-68"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gONC-RPC": {
+      "name": "gONC-RPC",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "111"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "111"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "udp/16994": {
+      "name": "udp/16994",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "16994"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gSNMP": {
+      "name": "gSNMP",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "161-162"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "161-162"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "SYSLOG": {
+      "name": "SYSLOG",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "514"
+        }
+      ],
+      "object_container": "device_group"
+    },
+    "gRADIUS": {
+      "name": "gRADIUS",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1812"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "1813"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gNFS": {
+      "name": "gNFS",
+      "service_definitions": [
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "111"
+        },
+        {
+          "protocol": "tcp",
+          "src_port": "*",
+          "dst_port": "2049"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "111"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "2049"
+        }
+      ],
+      "object_container": "shared"
+    },
+    "gDHCP6": {
+      "name": "gDHCP6",
+      "service_definitions": [
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "546"
+        },
+        {
+          "protocol": "udp",
+          "src_port": "*",
+          "dst_port": "547"
+        }
+      ],
+      "object_container": "shared"
+    }
+  },
+  "zones": {
+    "Internal": {
+      "name": "Internal",
+      "interfaces": [
+        "port3"
+      ],
+      "description": ""
+    },
+    "root-Internal": {
+      "name": "root-Internal",
+      "interfaces": [
+        "port4"
+      ],
+      "description": ""
+    }
+  },
+  "interfaces": {
+    "VLAN-103": {
+      "name": "VLAN-103",
+      "enable": "enabled",
+      "ips": [
+        "10.30.22.2/24"
+      ],
+      "rules_groups": []
+    },
+    "VLAN-104": {
+      "name": "VLAN-104",
+      "enable": "enabled",
+      "ips": [
+        "10.40.22.2/24"
+      ],
+      "rules_groups": []
+    },
+    "VLAN-102": {
+      "name": "VLAN-102",
+      "enable": "enabled",
+      "ips": [
+        "10.20.22.2/24"
+      ],
+      "rules_groups": []
+    },
+    "port7": {
+      "name": "port7",
+      "enable": "enabled",
+      "ips": [
+        "10.120.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port5": {
+      "name": "port5",
+      "enable": "enabled",
+      "ips": [
+        "10.30.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port6": {
+      "name": "port6",
+      "enable": "enabled",
+      "ips": [
+        "10.110.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port3": {
+      "name": "port3",
+      "zone": "Internal",
+      "enable": "enabled",
+      "ips": [
+        "10.10.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port4": {
+      "name": "port4",
+      "zone": "root-Internal",
+      "enable": "enabled",
+      "ips": [
+        "10.20.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port41": {
+      "name": "port41",
+      "enable": "enabled",
+      "ips": [
+        "10.40.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port42": {
+      "name": "port42",
+      "enable": "enabled",
+      "ips": [
+        "10.50.192.1/24"
+      ],
+      "rules_groups": []
+    }
+  },
+  "routes": {},
+  "schedules": {},
+  "global_nat_rules": {
+    "1": {
+      "id": "1",
+      "nattype": "DYNAMIC",
+      "origin_ips": [
+        "ip-10.10.192.87"
+      ],
+      "mapped_ips": [
+        "NAT_Pool"
+      ],
+      "nat_type": "DYNAMIC",
+      "rule_number": 1,
+      "enable": "enabled"
+    }
+  },
+  "nat_objects": {
+    "10.30.191.0_vip": {
+      "id": "10.30.191.0_vip",
+      "comment": "",
+      "nattype": "STATIC",
+      "origin_ips": [
+        "10.30.191.0"
+      ],
+      "mapped_ips": [
+        "10.110.191.1-10.110.191.1"
+      ],
+      "nat_type": "STATIC"
+    },
+    "VipObj1": {
+      "id": "VipObj1",
+      "comment": "",
+      "nattype": "STATIC",
+      "origin_ips": [
+        "10.30.191.158"
+      ],
+      "mapped_ips": [
+        "10.110.191.1-10.110.191.1"
+      ],
+      "nat_type": "STATIC"
+    },
+    "Vip_under_all_lan": {
+      "id": "Vip_under_all_lan",
+      "comment": "",
+      "nattype": "STATIC",
+      "origin_ips": [
+        "192.168.100.100"
+      ],
+      "mapped_ips": [
+        "192.168.101.18"
+      ],
+      "nat_type": "STATIC"
+    },
+    "new_vip": {
+      "id": "new_vip",
+      "comment": "",
+      "nattype": "STATIC",
+      "origin_ips": [
+        "10.110.191.5-10.110.191.6"
+      ],
+      "mapped_ips": [
+        "10.10.191.5"
+      ],
+      "nat_type": "STATIC"
+    }
+  },
+  "nat_pools": {
+    "NAT_Pool": {
+      "name": "NAT_Pool",
+      "ips": [
+        "10.10.192.44"
+      ],
+      "negate": false,
+      "type": "NAT_POOL",
+      "is_negate": false
+    },
+    "overload": {
+      "name": "overload",
+      "ips": [
+        "10.10.191.1-10.10.191.20"
+      ],
+      "negate": false,
+      "type": "NAT_POOL",
+      "is_negate": false
+    },
+    "ippool-new": {
+      "name": "ippool-new",
+      "ips": [
+        "0.0.0.0"
+      ],
+      "negate": false,
+      "type": "NAT_POOL",
+      "is_negate": false
+    }
+  },
+  "hosts_groups": {
+    "Address_Group_1": {
+      "name": "Address_Group_1",
+      "members": [
+        "Address_1",
+        "Address_2"
+      ],
+      "negate": false,
+      "object_container": "device_group",
+      "is_negate": false
+    },
+    "Address_Group_Test": {
+      "name": "Address_Group_Test",
+      "members": [
+        "33",
+        "44",
+        "55"
+      ],
+      "negate": false,
+      "object_container": "device_group",
+      "is_negate": false
+    }
+  },
+  "services_groups": {
+    "gWindows AD": {
+      "name": "gWindows AD",
+      "members": [
+        "gDCE-RPC",
+        "gDNS",
+        "gKERBEROS",
+        "gLDAP",
+        "gLDAP_UDP",
+        "gSAMBA",
+        "gSMB"
+      ],
+      "object_container": "shared"
+    },
+    "Windows AD": {
+      "name": "Windows AD",
+      "members": [
+        "DCE-RPC",
+        "DNS",
+        "KERBEROS",
+        "LDAP",
+        "LDAP_UDP",
+        "SAMBA",
+        "SMB"
+      ],
+      "object_container": "device_group"
+    },
+    "SaHTTP": {
+      "name": "SaHTTP",
+      "members": [
+        "tcp-16992",
+        "tcp-16994"
+      ],
+      "object_container": "device_group"
+    },
+    "Foo": {
+      "name": "Foo",
+      "members": [
+        "SaHTTP",
+        "tcp-16996"
+      ],
+      "object_container": "device_group"
+    },
+    "Service_Group_Test": {
+      "name": "Service_Group_Test",
+      "members": [
+        "AH",
+        "ESP",
+        "DNS"
+      ],
+      "object_container": "device_group"
+    },
+    "Web Access": {
+      "name": "Web Access",
+      "members": [
+        "DNS",
+        "HTTP",
+        "HTTPS"
+      ],
+      "object_container": "device_group"
+    },
+    "Email Access": {
+      "name": "Email Access",
+      "members": [
+        "DNS",
+        "IMAP",
+        "IMAPS",
+        "POP3",
+        "POP3S",
+        "SMTP",
+        "SMTPS"
+      ],
+      "object_container": "device_group"
+    },
+    "Exchange Server": {
+      "name": "Exchange Server",
+      "members": [
+        "DCE-RPC",
+        "DNS",
+        "HTTPS"
+      ],
+      "object_container": "device_group"
+    },
+    "gWeb Access": {
+      "name": "gWeb Access",
+      "members": [
+        "gDNS",
+        "gHTTP",
+        "gHTTPS"
+      ],
+      "object_container": "shared"
+    },
+    "gExchange Server": {
+      "name": "gExchange Server",
+      "members": [
+        "gDCE-RPC",
+        "gDNS",
+        "gHTTPS"
+      ],
+      "object_container": "shared"
+    },
+    "gEmail Access": {
+      "name": "gEmail Access",
+      "members": [
+        "gDNS",
+        "gIMAP",
+        "gIMAPS",
+        "gPOP3",
+        "gPOP3S",
+        "gSMTP",
+        "gSMTPS"
+      ],
+      "object_container": "shared"
+    }
+  },
+  "nat_objects_groups": {
+    "VipGroupObj1": {
+      "name": "VipGroupObj1",
+      "members": [
+        "VipObj1"
+      ],
+      "object_container": "device_group",
+      "nat_type": "STATIC"
+    }
+  },
+  "device_interfaces": {
+    "VLAN-103": {
+      "name": "VLAN-103",
+      "enable": "enabled",
+      "ips": [
+        "10.30.22.2/24"
+      ],
+      "rules_groups": []
+    },
+    "VLAN-104": {
+      "name": "VLAN-104",
+      "enable": "enabled",
+      "ips": [
+        "10.40.22.2/24"
+      ],
+      "rules_groups": []
+    },
+    "VLAN-102": {
+      "name": "VLAN-102",
+      "enable": "enabled",
+      "ips": [
+        "10.20.22.2/24"
+      ],
+      "rules_groups": []
+    },
+    "port7": {
+      "name": "port7",
+      "enable": "enabled",
+      "ips": [
+        "10.120.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port5": {
+      "name": "port5",
+      "enable": "enabled",
+      "ips": [
+        "10.30.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port6": {
+      "name": "port6",
+      "enable": "enabled",
+      "ips": [
+        "10.110.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port3": {
+      "name": "port3",
+      "zone": "Internal",
+      "enable": "enabled",
+      "ips": [
+        "10.10.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port4": {
+      "name": "port4",
+      "zone": "root-Internal",
+      "enable": "enabled",
+      "ips": [
+        "10.20.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port41": {
+      "name": "port41",
+      "enable": "enabled",
+      "ips": [
+        "10.40.192.1/24"
+      ],
+      "rules_groups": []
+    },
+    "port42": {
+      "name": "port42",
+      "enable": "enabled",
+      "ips": [
+        "10.50.192.1/24"
+      ],
+      "rules_groups": []
+    }
+  },
+  "from_to_zone": {
+    "any": {
+      "any": [
+        "1073741825",
+        "1074741826",
+        "1073741827",
+        "1073741828",
+        "1074741825"
+      ]
+    }
+  },
+  "rules_groups": {
+    "middle": {
+      "id": "middle",
+      "name": "Main",
+      "enable": "enabled",
+      "rule_display_name": "Main"
+    },
+    "before": {
+      "id": "before",
+      "name": "Header",
+      "enable": "enabled",
+      "rule_display_name": "Header"
+    },
+    "after": {
+      "id": "after",
+      "name": "Footer",
+      "enable": "enabled",
+      "rule_display_name": "Footer"
+    }
+  },
+  "config_type": "ZONE_BASED"
+}
