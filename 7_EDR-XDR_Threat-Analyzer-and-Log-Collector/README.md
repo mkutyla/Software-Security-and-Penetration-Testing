@@ -7,7 +7,7 @@ The *analyzer* directory contains files related to the Cyber Threat Analyzer. Cr
 - `Analyzer.py`: the Analyzer application  
 - `detection_rules.py`: file with detection rules  
 - `styles.py`: class used to change console colors  
-- **data** directiry: contains files used for testing the Analyzer  
+- **data** directory: contains files used for testing the Analyzer  
 - **zircolite** directory: contains files related to Zircolite:  
   - `zircoltie.py`: the Zircolite application  
   - **config** directory: contains the configuration file  
