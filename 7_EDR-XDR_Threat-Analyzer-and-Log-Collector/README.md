@@ -1,21 +1,21 @@
 # Repository Structure
 
-## Dictionary: analyzer  
-The *analyzer* dictionary contains files related to the Cyber Threat Analyzer. Created as part of university project.
+## Directory: analyzer  
+The *analyzer* directory contains files related to the Cyber Threat Analyzer. Created as part of university project.
 
 **Contents:**  
 - `Analyzer.py`: the Analyzer application  
 - `detection_rules.py`: file with detection rules  
 - `styles.py`: class used to change console colors  
-- **data** dictionary: contains files used for testing the Analyzer  
-- **zircolite** dictionary: contains files related to Zircolite:  
+- **data** directiry: contains files used for testing the Analyzer  
+- **zircolite** directory: contains files related to Zircolite:  
   - `zircoltie.py`: the Zircolite application  
-  - **config** dictionary: contains the configuration file  
-  - **rules** dictionary: contains Sigma rules  
+  - **config** directory: contains the configuration file  
+  - **rules** directory: contains Sigma rules  
   - `requirements.txt`: list of modules necessary for Zircolite to work  
 
-## Dictionary: collector  
-The *collector* dictionary contains files related to the Event Collector.
+## Directory: collector  
+The *collector* directory contains files related to the Event Collector.
 
 **Contents:**  
 - `EventCollector.py`: the Event Collector application  
